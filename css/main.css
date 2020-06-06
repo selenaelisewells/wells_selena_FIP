@@ -4,7 +4,8 @@ Font-Family: 'Lato', Sans-Serif;
 Font-Size: 16px  */
 
 #mainLogo {
-    top: 40px;
+    top: 10px;
+    left: 25px;
     position: absolute;
     height: 195px;
     width: auto;
@@ -409,4 +410,45 @@ footer {
     align-self: flex-end;
     margin-top: 20px;
     margin-bottom: -20px;
+}
+
+
+/* ads start */
+
+#adsWrapper {
+    margin: 130px;
+    display: flex;
+    align-items: center;
+}
+
+#ourAds {
+    width: 30%;
+}
+
+#ourAds h2 {
+    font-size: 50px;
+    Font-Family: 'Slabo 13px', Serif;
+    margin-bottom: 20px;
+}
+
+#ourAds p,
+#ourAds h3 {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryItem {
+    width: 320px;
+    height: 320px;
+    background-color: forestgreen;
+    margin: .5rem;
 }
