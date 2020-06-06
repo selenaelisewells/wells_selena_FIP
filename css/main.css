@@ -82,10 +82,12 @@ footer {
 
 .Headerbutton {
     margin: 70px 0;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-radius: 4px;
+    padding: 20px 30px;
+    border: solid 2px #fff;
+    font-size: 18px;
+    color: #fff;
     align-self: flex-start;
+    Font-Family: 'Lato', Sans-Serif;
 }
 
 #aboutUs {
@@ -188,7 +190,8 @@ footer {
 
 #valuesBanner p,
 #ourPerspective p,
-.textArea p {
+.textArea p,
+#BeerShop p {
     Font-Family: 'Lato', Sans-Serif;
     font-size: 20px;
     line-height: 30px;
@@ -296,4 +299,114 @@ footer {
     padding: 20px;
     Font-Family: 'Lato', Sans-Serif;
     line-height: 40px;
+}
+
+
+/* Products Start */
+
+#BeerShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+}
+
+#BeerShop h2 {
+    font-size: 50px;
+    Font-Family: 'Slabo 13px', Serif;
+    margin-bottom: 20px;
+}
+
+#productCards ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    Font-Family: 'Lato', Sans-Serif;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.card .button {
+    border: none;
+    margin: 10px;
+}
+
+#beerMenu {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    align-items: center;
+}
+
+.beerItem {
+    margin: 20px;
+    width: 60%;
+    display: flex;
+    background-color: forestgreen;
+}
+
+.beerText {
+    box-sizing: border-box;
+    padding: 50px;
+    Font-Family: 'Lato', Sans-Serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.beerTitle {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.beerAbout {
+    margin-top: 5px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.beerFacts {
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bolder;
+}
+
+.beerDescription {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.beerText .button {
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
