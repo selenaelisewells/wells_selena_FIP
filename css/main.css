@@ -452,3 +452,10 @@ footer {
     background-color: forestgreen;
     margin: .5rem;
 }
+
+
+/* puchase start */
+
+#purchaseWrapper {
+    margin: 0 150px;
+}
