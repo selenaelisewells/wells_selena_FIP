@@ -3,6 +3,19 @@ Font-Size: 48px;
 Font-Family: 'Lato', Sans-Serif;
 Font-Size: 16px  */
 
+#mainLogo {
+    top: 40px;
+    position: absolute;
+    height: 195px;
+    width: auto;
+}
+
+#footerLogo {
+    height: 195px;
+    width: auto;
+    margin-right: 40px;
+}
+
 #mainNav ul,
 footer ul {
     display: flex;
