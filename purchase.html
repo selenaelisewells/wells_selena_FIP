@@ -41,20 +41,18 @@
         </header>
         <div id="purchaseWrapper">
             <section id="finder">
-                <h2>Checkout Our Vendors Near You!</h2>
-                <form action="" method="get" class="form">
-                    <div class="location">
+                <h2 class="purchaseTitle">Checkout Our Vendors Near You!</h2>
+                <form action="#" method="get" class="form">
+                    <div class="input">
                         <label for="postalCode">Find A store Near You</label>
-                        <input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]
-                        " name="postalCode" id="postalCode" required>
+                        <input type="text" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" name="postalCode" id="postalCode" required>
                     </div>
-                    <div class="location">
-                        <input type="submit" value="Search">
-                    </div>
+
                 </form>
+                <img src="./images/Capture.jpg" alt="map">
             </section>
             <aside id="contact">
-                <h2>Get In Touch.</h2>
+                <h2 class="purchaseTitle">Get In Touch.</h2>
                 <p>Have more questions about Balla? </br> We will respond as soon as we can. Thank you!</p>
                 <form action="" method="get" class="contactForm">
                     <div class="input">
@@ -70,7 +68,11 @@
                         <input type="email" name="email" id="email" required>
                     </div>
                     <div class="input">
-                        <input type="submit" value="Send!">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something here..."></textarea>
+                    </div>
+                    <div class="input">
+                        <input class="send" type="submit" value="Send!">
                     </div>
                 </form>
             </aside>

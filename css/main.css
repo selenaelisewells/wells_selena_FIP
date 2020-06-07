@@ -457,5 +457,78 @@ footer {
 /* puchase start */
 
 #purchaseWrapper {
-    margin: 0 150px;
+    margin: 0 150px 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.purchaseTitle {
+    font-size: 50px;
+    Font-Family: 'Slabo 13px', Serif;
+}
+
+#finder {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .purchaseTitle {
+    margin-bottom: 20px;
+}
+
+.input {
+    flex-direction: column;
+    display: flex;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 17px;
+    Font-Family: 'Slabo 13px', Serif;
+    text-transform: uppercase;
+}
+
+input {
+    height: 60px;
+    width: auto;
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+}
+
+.send {
+    width: 40%;
+    height: 3rem;
+    align-self: center;
+}
+
+#finder .form {
+    width: 33%;
+}
+
+textarea {
+    resize: none;
+    height: 175px;
+    padding: 20px;
+    box-sizing: border-box;
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+}
+
+#contact {
+    background-color: gray;
+    padding: 50px;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+}
+
+#contact .purchaseTitle {
+    text-align: center;
+}
+
+#contact p {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    text-align: center;
 }
