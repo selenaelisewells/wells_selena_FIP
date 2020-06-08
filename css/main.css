@@ -31,6 +31,14 @@ Font-Size: 16px  */
     color: #fff;
 }
 
+.navLink:hover {
+    color: #E5CD65;
+}
+
+.selected {
+    color: #E5CD65;
+}
+
 header {
     display: flex;
     width: 100%;
@@ -91,7 +99,28 @@ footer {
 }
 
 .Headerbutton:hover {
-    background-color: ;
+    animation: 3s ease-in-out infinite btn-animation;
+}
+
+@keyframes btn-animation {
+    50% {
+        background-color: #bf2e27;
+    }
+}
+
+#arrowSvg {
+    position: absolute;
+    align-self: center;
+    animation: 1s ease-out infinite arrow;
+}
+
+@keyframes arrow {
+    25% {
+        transform: translateY(-40px);
+    }
+    50% {
+        translate: translateY(-20px);
+    }
 }
 
 #aboutUs {
@@ -156,6 +185,11 @@ footer {
     color: #fff;
     Font-Family: 'Lato', Sans-Serif;
     align-self: center;
+}
+
+#CTA .button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 #CTA {
@@ -315,9 +349,10 @@ footer {
 
 #checkout {
     Font-Family: 'Lato', Sans-Serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: right;
     text-transform: uppercase;
+    color: #bf2e27;
 }
 
 #testimonials {
