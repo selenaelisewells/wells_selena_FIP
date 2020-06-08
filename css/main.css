@@ -1,0 +1,609 @@
+/* /* Font-Family: 'Slabo 13px', Serif;
+Font-Size: 48px;
+Font-Family: 'Lato', Sans-Serif;
+Font-Size: 16px  */
+
+#mainLogo {
+    top: 10px;
+    left: 25px;
+    position: absolute;
+    height: 195px;
+    width: auto;
+}
+
+#footerLogo {
+    height: 195px;
+    width: auto;
+    margin-right: 40px;
+}
+
+.navList {
+    display: flex;
+    width: 1000px;
+    justify-content: space-evenly;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Slabo 13px', Serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.navLink:hover {
+    color: #E5CD65;
+}
+
+.selected {
+    color: #E5CD65;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 158px;
+    background-color: #112012;
+    justify-content: space-around;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 112px;
+    background-color: #112012;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#mainContent {
+    width: 1640px;
+    margin: 0 auto;
+}
+
+#heroImg {
+    display: flex;
+    width: 100%;
+    height: 583px;
+    background-image: url(../images/heroImage.jpg);
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.headingText {
+    Font-Family: 'Slabo 13px', Serif;
+    font-size: 90px;
+    color: #fff;
+}
+
+.Headerbutton {
+    margin: 70px 0;
+    padding: 20px 30px;
+    border: solid 2px #fff;
+    font-size: 18px;
+    color: #fff;
+    align-self: flex-start;
+    Font-Family: 'Lato', Sans-Serif;
+}
+
+.Headerbutton:hover {
+    animation: 3s ease-in-out infinite btn-animation;
+}
+
+@keyframes btn-animation {
+    50% {
+        background-color: #bf2e27;
+    }
+}
+
+#arrowSvg {
+    position: absolute;
+    align-self: center;
+    animation: 1s ease-out infinite arrow;
+}
+
+@keyframes arrow {
+    25% {
+        transform: translateY(-40px);
+    }
+    50% {
+        translate: translateY(-20px);
+    }
+}
+
+#aboutUs {
+    display: flex;
+    height: 325px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 14px;
+    justify-content: space-between;
+}
+
+#aboutUsBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    border: solid 4px #bf2e27;
+    width: 536px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+#aboutUsBox h2 {
+    Font-Family: 'Slabo 13px', Serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#aboutUsBox p {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+#aboutUsRight {
+    width: 1088px;
+}
+
+#aboutUsBox .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #112012;
+    Font-Family: 'Lato', Sans-Serif;
+    align-self: center;
+}
+
+#aboutUsBox .button:hover {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #112012;
+    border: solid 2px #112012;
+    background-color: #fff;
+}
+
+.button {
+    border: solid 2px #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    Font-Family: 'Lato', Sans-Serif;
+    align-self: center;
+}
+
+#CTA .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#CTA {
+    display: flex;
+    height: 412px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 14px;
+    justify-content: space-between;
+}
+
+.actionItem {
+    margin-top: 60px;
+    background-color: #112012;
+    width: 536px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.actionItem h2,
+#valuesBanner h2,
+.value {
+    text-align: center;
+    Font-Family: 'Slabo 13px', Serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.actionItem p,
+.values p {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    color: #fff;
+}
+
+#valuesBanner {
+    display: flex;
+    height: 325px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-image: url(../images/values_banner.jpg);
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#valuesBanner p {
+    color: #fff;
+}
+
+#valuesBanner p,
+#ourPerspective p,
+.textArea p,
+#BeerShop p {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#valuesGroup {
+    display: flex;
+    height: 325px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.values {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 400px;
+}
+
+#value1 {
+    background-image: url(../images/natural_beer.jpg);
+}
+
+#value2 {
+    background-image: url(../images/human_beer.jpg);
+}
+
+#value3 {
+    background-image: url(../images/quality_beer.jpg);
+}
+
+
+/* About Page Starts */
+
+#topBanner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/perspective_Banner.jpg);
+    height: 400px;
+    color: #fff;
+}
+
+#ourPerspective {
+    margin-top: 130px;
+    margin-left: 400px;
+    box-sizing: border-box;
+    width: 675px;
+}
+
+#perspectiveTitle h2 {
+    Font-Family: 'Slabo 13px', Serif;
+    font-size: 50px;
+}
+
+#perspectiveTitle h3 {
+    text-transform: uppercase;
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#whoWeAre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#whoWeAre img {
+    width: 536px;
+    height: 325px;
+    background-color: lightgray;
+    margin-right: 150px;
+}
+
+.textArea h2 {
+    text-transform: uppercase;
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#checkout {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #bf2e27;
+}
+
+#testimonials {
+    width: 100%;
+    border: solid black 2px;
+    height: 350px;
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+#testimonials p {
+    font-size: 35px;
+    padding: 20px;
+    Font-Family: 'Lato', Sans-Serif;
+    line-height: 40px;
+}
+
+
+/* Products Start */
+
+#BeerShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+}
+
+#BeerShop h2 {
+    font-size: 50px;
+    Font-Family: 'Slabo 13px', Serif;
+    margin-bottom: 20px;
+}
+
+#productCards ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    Font-Family: 'Lato', Sans-Serif;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.card .button {
+    border: none;
+    margin: 10px;
+}
+
+#beerMenu {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    align-items: center;
+}
+
+.beerItem {
+    margin: 20px;
+    width: 60%;
+    display: flex;
+    background-color: forestgreen;
+}
+
+.beerText {
+    box-sizing: border-box;
+    padding: 50px;
+    Font-Family: 'Lato', Sans-Serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.beerTitle {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.beerAbout {
+    margin-top: 5px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.beerFacts {
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bolder;
+}
+
+.beerDescription {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.beerText .button {
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+
+/* ads start */
+
+#adsWrapper {
+    margin: 130px;
+    display: flex;
+    align-items: center;
+}
+
+#ourAds {
+    width: 30%;
+}
+
+#ourAds h2 {
+    font-size: 50px;
+    Font-Family: 'Slabo 13px', Serif;
+    margin-bottom: 20px;
+}
+
+#ourAds p,
+#ourAds h3 {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryItem {
+    width: 320px;
+    height: 320px;
+    background-color: forestgreen;
+    margin: .5rem;
+}
+
+
+/* puchase start */
+
+#purchaseWrapper {
+    margin: 0 150px 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.purchaseTitle {
+    font-size: 50px;
+    Font-Family: 'Slabo 13px', Serif;
+}
+
+#finder {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .purchaseTitle {
+    margin-bottom: 20px;
+}
+
+.input {
+    flex-direction: column;
+    display: flex;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 17px;
+    Font-Family: 'Slabo 13px', Serif;
+    text-transform: uppercase;
+}
+
+input {
+    height: 60px;
+    width: auto;
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.send {
+    width: 40%;
+    height: 3rem;
+    align-self: center;
+}
+
+#finder .form {
+    width: 33%;
+}
+
+textarea {
+    resize: none;
+    height: 175px;
+    padding: 20px;
+    box-sizing: border-box;
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+}
+
+#contact {
+    background-color: #112012;
+    padding: 50px;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    color: #fff;
+}
+
+#contact .purchaseTitle {
+    text-align: center;
+}
+
+#contact p {
+    Font-Family: 'Lato', Sans-Serif;
+    font-size: 20px;
+    text-align: center;
+}
