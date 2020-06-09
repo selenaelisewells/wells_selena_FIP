@@ -450,7 +450,8 @@ footer {
     margin: 20px;
     width: 60%;
     display: flex;
-    background-color: forestgreen;
+    background-color: #112012;
+    color: #fff;
 }
 
 .beerText {
