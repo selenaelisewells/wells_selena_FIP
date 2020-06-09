@@ -108,18 +108,23 @@ footer {
     }
 }
 
-#arrowSvg {
+.arrowSvg {
     position: absolute;
     align-self: center;
     animation: 1s ease-out infinite arrow;
 }
 
+.Shop {
+    width: 100%;
+    text-align: center;
+}
+
 @keyframes arrow {
     25% {
-        transform: translateY(-40px);
+        transform: translateY(-20px);
     }
     50% {
-        translate: translateY(-20px);
+        translate: translateY(-10px);
     }
 }
 
@@ -336,7 +341,6 @@ footer {
 #whoWeAre img {
     width: 536px;
     height: 325px;
-    background-color: lightgray;
     margin-right: 150px;
 }
 
@@ -409,7 +413,8 @@ footer {
     flex: auto;
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    color: #fff;
+    background-color: #112012;
     text-align: center;
     box-sizing: border-box;
     margin: 0.5rem;
@@ -445,7 +450,8 @@ footer {
     margin: 20px;
     width: 60%;
     display: flex;
-    background-color: forestgreen;
+    background-color: #112012;
+    color: #fff;
 }
 
 .beerText {
