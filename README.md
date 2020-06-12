@@ -12,6 +12,6 @@ HTML CSS JS
 ### License:
 MIT
 
-### Ressources Used 
+### Ressources Used:
 https://css-tricks.com/css-animation-libraries/
 https://developer.mozilla.org/en-US/docs/Web/CSS/animation
