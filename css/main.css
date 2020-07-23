@@ -3,6 +3,8 @@ Font-Size: 48px;
 Font-Family: 'Lato', Sans-Serif;
 Font-Size: 16px  */
 
+@media screen and (max-width: 700px) {}
+
 #mainLogo {
     top: 10px;
     left: 25px;
@@ -15,6 +17,11 @@ Font-Size: 16px  */
     height: 195px;
     width: auto;
     margin-right: 40px;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navList {
@@ -66,7 +73,7 @@ footer {
 }
 
 #mainContent {
-    width: 1640px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 
@@ -80,6 +87,7 @@ footer {
     justify-content: flex-end;
     box-sizing: border-box;
     padding: 3rem;
+    background-position: center;
 }
 
 .headingText {
@@ -124,13 +132,13 @@ footer {
         transform: translateY(-20px);
     }
     50% {
-        translate: translateY(-10px);
+        transform: translateY(-10px);
     }
 }
 
 #aboutUs {
     display: flex;
-    height: 325px;
+    min-height: 325px;
     width: 100%;
     margin: 0 auto;
     margin-top: 14px;
@@ -141,9 +149,10 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
+    flex-basis: 33%;
     padding-left: 20px;
     border: solid 4px #bf2e27;
-    width: 536px;
+    /* width: 536px; */
     box-sizing: border-box;
     padding: 40px;
 }
@@ -162,8 +171,10 @@ footer {
     line-height: 30px;
 }
 
-#aboutUsRight {
-    width: 1088px;
+.imageContainer {
+    flex-basis: 66%;
+    background-image: url(../images/hops_banner.jpg);
+    background-size: cover;
 }
 
 #aboutUsBox .button {
@@ -199,7 +210,7 @@ footer {
 
 #CTA {
     display: flex;
-    height: 412px;
+    min-height: 412px;
     width: 100%;
     margin: 0 auto;
     margin-top: 14px;
@@ -238,7 +249,7 @@ footer {
 
 #valuesBanner {
     display: flex;
-    height: 325px;
+    min-height: 325px;
     width: 100%;
     margin: 0 auto;
     margin-top: 60px;
@@ -265,7 +276,7 @@ footer {
 
 #valuesGroup {
     display: flex;
-    height: 325px;
+    min-height: 325px;
     width: 90%;
     margin: 0 auto;
     margin-top: 60px;
@@ -613,3 +624,6 @@ textarea {
     font-size: 20px;
     text-align: center;
 }
+
+@media (min-width:780px;
+)
