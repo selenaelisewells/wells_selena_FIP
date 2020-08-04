@@ -1,59 +1,472 @@
-    /* breakpoints */
-    
-     :root {
-        --tablet-screen: 480px;
-        --desktop-screen: 768px;
-        --desktop-lg-screen: 1024px;
-        /* colours */
-        --green: #112012;
-        --red: #bf2e27;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    
-    #container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    
-    header {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    
-    #mainNav {
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--green);
-        height: 82px;
-        padding: 0 20px;
-        align-items: center;
-    }
-    
-    .navList {
-        display: none;
-    }
-    
-    #logo {
-        height: auto;
-        width: 121px;
-    }
-    
-    .menuBtn {
-        background: none;
-        border: none;
-    }
-    
-    @media (min-width: 768px) {
-        .navList {
-            display: flex;
-            flex-direction: space;
+        /* breakpoints */
+        
+         :root {
+            --tablet-screen: 480px;
+            --desktop-screen: 768px;
+            --desktop-lg-screen: 1024px;
+            /* colours */
+            --green: #112012;
+            --red: #bf2e27;
         }
-        .menuBtn {
+        
+        .hidden {
             display: none;
         }
-    }
+        
+        #container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            font-size: 16px;
+        }
+        
+        header {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+        /* nav Styles */
+        
+        #mainNav {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--green);
+            height: 82px;
+            padding: 0 20px;
+            align-items: center;
+        }
+        
+        .navList {
+            display: none;
+        }
+        
+        #mainLogo {
+            height: auto;
+            width: 121px;
+        }
+        
+        .menuBtn {
+            background: none;
+            border: none;
+        }
+        
+        .navLink:hover {
+            color: #d7c486;
+        }
+        
+        .selected {
+            color: #d7c486;
+        }
+        /* start of hero Image Styles */
+        
+        #heroImg {
+            display: flex;
+            width: 100%;
+            max-height: 732px;
+            background-image: url(../images/heroImage-mobile.png);
+            flex-direction: column;
+            box-sizing: border-box;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+        }
+        
+        .headingText {
+            margin-top: 175px;
+            Font-Family: 'Slabo 13px', Serif;
+            font-size: 2.5rem;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .headingText span {
+            font-size: 3rem;
+            display: block;
+        }
+        
+        .heroTxtWrap {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Headerbutton {
+            margin-top: 30px;
+            align-self: center;
+            padding: 20px 30px;
+            border: solid 2px #fff;
+            font-size: 18px;
+            color: #fff;
+            Font-Family: 'Lato', Sans-Serif;
+        }
+        
+        @keyframes btn-animation {
+            50% {
+                background-color: #bf2e27;
+            }
+        }
+        
+        .arrowSvg {
+            margin-top: 150px;
+            animation: 1s ease-out infinite arrow;
+        }
+        
+        @keyframes arrow {
+            25% {
+                transform: translateY(-20px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        #aboutUsBox {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #aboutUs {
+            display: flex;
+            flex-direction: column-reverse;
+            width: auto;
+        }
+        
+        .actionItem {
+            font-size: 1em;
+            margin-top: 20px;
+            background-color: #112012;
+            display: flex;
+            flex-direction: column;
+            /* box-sizing: border-box; */
+            padding: 20px;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .actionText {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 15px 45px;
+        }
+        
+        .actionText p {
+            padding: 0;
+        }
+        
+        .actionText .button {
+            margin: 0 auto;
+        }
+        
+        .imageContainer {
+            background-image: url(../images/411-hopsBanner.jpg);
+            background-size: cover;
+            height: 250px;
+            width: auto;
+            margin: 40px 0;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #112012;
+            Font-Family: 'Lato', Sans-Serif;
+            align-self: center;
+            border-radius: 4px;
+            border: 2px solid #fff;
+        }
+        
+        h2 {
+            Font-Family: 'Slabo 13px', Serif;
+            font-size: 2em;
+            font-weight: bolder;
+            text-align: center;
+        }
+        
+        p {
+            Font-Family: 'Lato', Sans-Serif;
+            font-size: 1em;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            line-height: 30px;
+            padding: 0 45px;
+        }
+        
+        #valuesBanner {
+            background-image: url(../images/411-valuesBanner.jpg);
+            background-size: cover;
+            height: 250px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        #valuesBanner h2 {
+            padding-top: 50px;
+        }
+        
+        #valuesGroup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 305px;
+            margin: 0 auto;
+        }
+        
+        .value {
+            text-align: center;
+            Font-Family: 'Slabo 13px', Serif;
+            font-size: 1.5em;
+            color: #fff;
+            margin-top: 45px;
+        }
+        
+        .values {
+            margin-top: 20px;
+        }
+        
+        #value1 {
+            background-image: url(../images/natural_beer-mobile.jpg);
+            height: 425px;
+            width: 305px;
+            background-repeat: no-repeat;
+        }
+        
+        #value2 {
+            background-image: url(../images/friends-mobile.jpg);
+            height: 425px;
+            width: 305px;
+            background-repeat: no-repeat;
+        }
+        
+        #value3 {
+            background-image: url(../images/pouring-mobile.jpg);
+            height: 425px;
+            width: 305px;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+        
+        #footer {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            background-color: var(--green);
+            color: #fff;
+            font-size: .5em;
+            font-weight: lighter;
+            padding: 40px;
+            line-height: 30px;
+        }
+        
+        #footerLogo {
+            height: 70px;
+        }
+        
+        #footerContact h2 {
+            display: flex;
+            align-items: left;
+            text-align: left;
+            width: 100%;
+        }
+        
+        .break {
+            margin-top: 30px;
+        }
+        
+        .backUp {
+            cursor: pointer;
+            color: #fff;
+            align-self: center;
+        }
+        
+        #socials {
+            display: flex;
+            align-self: center;
+        }
+        
+        .social {
+            height: 30px;
+            width: 30px;
+            padding: 20px;
+        }
+        
+        .headerSocials {
+            display: none;
+        }
+        /* start of desktop styles */
+        
+        @media (min-width: 1024px) {
+            #mainContent {
+                max-width: 1640px;
+                margin: 0 auto;
+            }
+            .Headerbutton:hover {
+                animation: 3s ease-in-out infinite btn-animation;
+            }
+            .headerSocials {
+                display: flex;
+            }
+            .navList {
+                display: flex;
+                justify-content: space-around;
+            }
+            .menuBtn {
+                display: none;
+            }
+            .navLink {
+                text-decoration: none;
+                font-size: 20px;
+                font-family: 'Slabo 13px', Serif;
+                font-weight: bolder;
+                color: #fff;
+                padding: 0 40px;
+            }
+            #mainLogo {
+                top: 10px;
+                left: 25px;
+                position: absolute;
+                height: 195px;
+                width: auto;
+            }
+            .navSpacer {
+                width: 320px;
+            }
+            #mainNav {
+                height: 158px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            #heroImg {
+                max-width: 1640px;
+                width: 100%;
+                height: 583px;
+                background-image: url(../images/heroImage.jpg);
+                margin: 0 auto;
+                flex-direction: column;
+                justify-content: left;
+                box-sizing: border-box;
+                padding: 3rem;
+                background-position: center;
+                align-items: left;
+            }
+            .headingText span {
+                font-size: 5.5rem;
+                display: inline;
+            }
+            .headingText {
+                font-size: 5.5rem;
+            }
+            .heroTxtWrap {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 1350px;
+                width: 100%;
+            }
+            .Headerbutton {
+                align-self: flex-start;
+                margin-top: 40px;
+            }
+            .arrowSvg {
+                margin-top: 50px;
+            }
+            #aboutUsBox .button:hover {
+                padding: 10px 20px;
+                font-size: 18px;
+                color: #112012;
+                border: solid 2px #112012;
+                background-color: #fff;
+            }
+            #aboutUs {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: auto;
+                max-height: 325px;
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 14px;
+                grid-gap: 20px;
+            }
+            #aboutUsBox {
+                text-align: left;
+                flex-basis: 33%;
+                padding-left: 20px;
+                border: solid 4px #bf2e27;
+                /* width: 536px; */
+                box-sizing: border-box;
+                padding: 20px;
+            }
+            #aboutUsBox .button,
+            p {
+                margin: 0;
+            }
+            .imageContainer {
+                flex-basis: 66%;
+                background-image: url(../images/hops_banner.jpg);
+                background-size: cover;
+                margin: 0;
+            }
+            #CTA {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20px;
+                justify-content: space-between;
+            }
+            .actionText {
+                margin: 10px 0;
+            }
+            .actionText p {
+                margin: 30px 0;
+            }
+            #valuesBanner {
+                background-image: url(../images/values_banner.png);
+            }
+            .values {
+                margin: 0px auto;
+            }
+            #valuesGroup {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+                margin: 20px auto;
+            }
+            #value1 {
+                max-width: 400px;
+                width: 100%;
+                background-image: url(../images/natural_beer.jpg);
+            }
+            #value2 {
+                max-width: 400px;
+                width: 100%;
+                background-image: url(../images/human_beer.jpg);
+            }
+            #value3 {
+                max-width: 400px;
+                width: 100%;
+                background-image: url(../images/quality_beer.jpg);
+                margin-bottom: 0;
+            }
+            #footer {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 112px;
+                background-color: #112012;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 2rem;
+            }
+            #footerContact {
+                display: none;
+            }
+            #footer #socials {
+                display: none;
+            }
+            #footerLogo {
+                height: 182px;
+            }
+        }
+        
+        @media (min-width: 1400px) {}
