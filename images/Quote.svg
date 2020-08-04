@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="39.8" viewBox="0 0 43 39.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #bf2e27;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="43" height="39.8"/>
+    </clipPath>
+  </defs>
+  <g id="Quote" class="cls-2">
+    <path id="Path_19" data-name="Path 19" class="cls-3" d="M15.856,22.589V39.8H0V26.085C0,18.824.806,13.446,2.688,9.95A22.244,22.244,0,0,1,13.706,0l3.762,5.916a14.119,14.119,0,0,0-6.719,5.647c-1.613,2.42-2.419,6.185-2.419,11.026Zm25.8,0V39.8H25.8V26.085c0-7.53.806-12.639,2.688-16.135A22.244,22.244,0,0,1,39.506,0L43,5.916a14.119,14.119,0,0,0-6.719,5.647c-1.344,2.42-2.15,6.185-2.419,11.026Z"/>
+  </g>
+</svg>

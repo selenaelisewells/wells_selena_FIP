@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balla | Products</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato%7CSlabo+13px" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -13,30 +14,36 @@
 <body>
     <div id="container">
         <header>
-            <div>
-                <img id="mainLogo" class="logo" src="./images/Logo.svg" alt="Balla Logo Mans Head">
-                <h1 class="hidden">Balla Beer | Products</h1>
-            </div>
             <nav id="mainNav">
-
+                <div id="logo">
+                    <img id="mainLogo" class="logo" src="./images/Logo.svg" alt="Balla Logo Mans Head">
+                    <h1 class="hidden">Balla Beer | Home</h1>
+                </div>
+                <div class="navSpacer"></div>
                 <h2 class="hidden">Main Navigation</h2>
+                <button class="menuBtn"><img src="./images/menu.svg" alt="hamburger menu"></button>
                 <ul class="navList">
                     <li>
-                        <a class="navLink" href="index.html">Home</a>
+                        <a class="navLink selected" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="navLink" href="about.html">About</a>
+                        <a class="navLink" href="about.html ">About</a>
                     </li>
                     <li>
-                        <a class="navLink selected" href="products.html">Products</a>
+                        <a class="navLink" href="products.html">Products</a>
                     </li>
                     <li>
-                        <a class="navLink" href="ads.html">Advertisements</a>
+                        <a class="navLink" href="ads.html ">Advertisements</a>
                     </li>
                     <li>
                         <a class="navLink" href="purchase.html">Purchase</a>
                     </li>
                 </ul>
+                <div class="headerSocials">
+                    <a class="social" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram logo"></a>
+                    <a class="social" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter logo"></a>
+                    <a class="social" href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook logo"></a>
+                </div>
             </nav>
 
         </header>
@@ -46,47 +53,46 @@
             <p>We have developed and cultivated partnerships with some of today's most vibrant retailers with the underlying effect of ensuring everyone has access to our products. Be it a nearby physical store, or an eCommerce site that suits your style,
                 our product are in more places today than ever before!</p>
         </section>
-        <section id="productCards">
+        <section id="productCards" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 
-            <ul>
-                <li class="card">
-                    <img src="./images/hatLogo.jpg" alt="hat photo">
-                    <h2>Balla Hat</h2>
+            <div class="card carousel-cell">
+                <img src="./images/hatLogo.jpg" alt="hat photo">
+                <h2>Balla Hat</h2>
 
-                    <a href="#" class="button">More Info</a>
-                </li>
-
-
-                <li class="card">
-                    <img src="./images/coasterLogo.jpg" alt="coaster photo">
-                    <h2>Coasters</h2>
-
-                    <a href="#" class="button">More Info</a>
-                </li>
-
-                <li class="card">
-                    <img src="./images/ballaBeer.jpg" alt="beer photo">
-                    <h2>Balla Beer</h2>
-
-                    <a href="#" class="button">More Info</a>
-                </li>
+                <a href="#" class="button">More Info</a>
+            </div>
 
 
-                <li class="card">
-                    <img src="./images/mugLogo.jpg" alt="stein photo">
-                    <h2>Stein</h2>
+            <div class="card carousel-cell">
+                <img src="./images/coasterLogo.jpg" alt="coaster photo">
+                <h2>Coasters</h2>
 
-                    <a href="#" class="button">More Info</a>
-                </li>
+                <a href="#" class="button">More Info</a>
+            </div>
 
-                <li class="card">
-                    <img src="./images/t-shirtLogo.jpg" alt="t-shirt photo">
-                    <h2>T-shirt</h2>
+            <div class="card carousel-cell">
+                <img src="./images/ballaBeer.jpg" alt="beer photo">
+                <h2>Balla Beer</h2>
 
-                    <a href="#" class="button">More Info</a>
-                </li>
+                <a href="#" class="button">More Info</a>
+            </div>
 
-            </ul>
+
+            <div class="card carousel-cell">
+                <img src="./images/mugLogo.jpg" alt="stein photo">
+                <h2>Stein</h2>
+
+                <a href="#" class="button">More Info</a>
+            </div>
+
+            <div class="card carousel-cell">
+                <img src="./images/t-shirtLogo.jpg" alt="t-shirt photo">
+                <h2>T-shirt</h2>
+
+                <a href="#" class="button">More Info</a>
+            </div>
+
+
 
         </section>
         <div class="arrowSvg Shop">
@@ -123,8 +129,9 @@
         </div>
         <section id="beerMenu">
             <div class="beerItem">
-                <img src="./images/ballaBeer.jpg" alt="beer photo">
+
                 <div class="beerText">
+                    <img class="productImage" src="./images/ballaBeer.jpg" alt="beer photo">
                     <h2 class="beerTitle">Original Balla</h2>
                     <h3 class="beerAbout">I'm an IPA brewed with oak & musk</h3>
                     <ul class="beerFacts">
@@ -138,14 +145,14 @@
 
             </div>
             <div class="beerItem">
-                <img src="./images/hatLogo.jpg" alt="hat photo">
+
                 <div class="beerText">
+                    <img class="productImage" src="./images/hatLogo.jpg" alt="hat photo">
                     <h2 class="beerTitle">Balla Hat</h2>
                     <h3 class="beerAbout">I'm a hat stitched with the Balla logo</h3>
                     <ul class="beerFacts">
                         <li>Organic Cotton</li>
                         <li>Price: 16$</li>
-                        <br>
 
                     </ul>
                     <p class="beerDescription">This hat is made from 100% ethically sourced materials here in Canada. For every one hat bought, one tree is planted on the grounds of our brewery. A delicate mesh is used in the back to allow to comfort and breathability.</p>
@@ -154,14 +161,15 @@
 
             </div>
             <div class="beerItem">
-                <img src="./images/coasterLogo.jpg" alt="coaster photo">
+
                 <div class="beerText">
+                    <img class="productImage" src="./images/coasterLogo.jpg" alt="coaster photo">
                     <h2 class="beerTitle">Balla Coasters</h2>
                     <h3 class="beerAbout">I'm a 100% recycled coaster</h3>
                     <ul class="beerFacts">
                         <li>Made of 100% Recycled Materials</li>
                         <li>Price: 5$ for a pack of 10</li>
-                        <br>
+
 
                     </ul>
                     <p class="beerDescription">Who wants stains on your table from your favourite pint? No-one. These recycled coasters are a great way to protect your tables while also decorating them with your favourite brand!
@@ -171,14 +179,15 @@
 
             </div>
             <div class="beerItem">
-                <img src="./images/mugLogo.jpg" alt="beer stein photo">
+
                 <div class="beerText">
+                    <img class="productImage" src="./images/mugLogo.jpg" alt="beer stein photo">
                     <h2 class="beerTitle">Balla Stein</h2>
                     <h3 class="beerAbout">I'm a glass Stein for your Balla Beer</h3>
                     <ul class="beerFacts">
                         <li>Made in Canada</li>
                         <li>Price: 10$ for 1 or 15$ for 2</li>
-                        <br>
+
 
                     </ul>
                     <p class="beerDescription">Beer is always better out of a chilled glass. Drink in style with this beautifully crafted glass stein. Keep it in the freezer for optimal beer drinking. The glass is dishwasher safe for fast and easy cleanup.</p>
@@ -187,14 +196,15 @@
 
             </div>
             <div class="beerItem">
-                <img src="./images/t-shirtLogo.jpg" alt="t-shirt photo">
+
                 <div class="beerText">
+                    <img class="productImage" src="./images/t-shirtLogo.jpg" alt="t-shirt photo">
                     <h2 class="beerTitle">Balla T-Shirt</h2>
                     <h3 class="beerAbout">I'm an 100% organic cotton t-shirt</h3>
                     <ul class="beerFacts">
                         <li>Made in Canada</li>
                         <li>Price: 15$</li>
-                        <br>
+
 
                     </ul>
                     <p class="beerDescription">Made from 100% organic cotton, ethically sourced and made in Canada. This t-shirt is comfortable and breathable. Sized in adult unisex, XS-XXL</p>
@@ -207,29 +217,43 @@
         </section>
 
         <footer id="footer">
+            <a class="backUp" href="products.html"><img src="./images/up.svg" alt="back to top"></a>
 
             <h2 class="hidden">Footer Navigation</h2>
             <ul class="navList">
                 <li>
-                    <a class="navLink" href="index.html">Home</a>
+                    <a class="navLink selected" href=" index.html ">Home</a>
                 </li>
                 <li>
                     <a class="navLink" href="about.html">About</a>
                 </li>
                 <li>
-                    <a class="navLink selected" href="products.html">Products</a>
+                    <a class="navLink" href=" products.html ">Products</a>
                 </li>
                 <li>
                     <a class="navLink" href="ads.html">Advertisements</a>
                 </li>
                 <li>
-                    <a class="navLink" href="purchase.html">Purchase</a>
+                    <a class="navLink" href=" purchase.html">Purchase</a>
                 </li>
             </ul>
-            <div><img id="footerLogo" class="logo" src="./images/Logo_Head.svg" alt="Balla Logo Mans Head"></div>
+            <div id="FooterLogo"><img id="footerLogo" class="logo" src="./images/Logo_Head.svg" alt="Balla Logo Mans Head"></div>
+            <div id="footerContact">
+                <h2>ballaformen@gmail.com</h2>
+                <h2>123-456-7890</h2>
+
+                <h2 class="break">Balla Brewery</h2>
+                <h2>123 Balla Street, Suit 12</h2>
+                <h2>London, ON, Canada</h2>
+            </div>
+            <div id="socials">
+                <a class="social" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram logo"></a>
+                <a class="social" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter logo"></a>
+                <a class="social" href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook logo"></a>
+            </div>
         </footer>
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>

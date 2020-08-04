@@ -28,6 +28,7 @@
         /* nav Styles */
         
         #mainNav {
+            flex: 1;
             display: flex;
             justify-content: space-between;
             background-color: var(--green);
@@ -289,10 +290,226 @@
             height: 30px;
             width: 30px;
             padding: 20px;
+            cursor: pointer;
         }
         
         .headerSocials {
             display: none;
+        }
+        /* start of about - mobile */
+        
+        #ourPerspective {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #perspectiveTitle {
+            background-image: url(../images/perspective_Banner-mobile.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 250px;
+            text-align: center;
+            color: #fff;
+            padding-top: 6rem;
+            font-size: 1.5rem;
+            /* flex: 1 1 160px; */
+        }
+        
+        #perspectiveTitle h3 {
+            text-transform: uppercase;
+            font-family: 'Lato', Sans-Serif;
+            font-size: 1rem;
+            margin: 20px;
+        }
+        
+        #ourPerspective p {
+            width: 80%;
+            font-size: 1rem;
+        }
+        
+        #whoWeAre .textArea p {
+            font-size: 1rem;
+        }
+        
+        .textArea h2 {
+            text-align: left;
+            font-family: 'Lato', Sans-Serif;
+            background-color: var(--red);
+            padding: 2% 10%;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        
+        #checkout {
+            margin: 40px 20px;
+            text-transform: uppercase;
+        }
+        
+        .textArea p {
+            padding: 0;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #testimonials {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .quote {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: auto;
+            align-self: center;
+            padding-top: 100px;
+            margin: 2rem auto;
+            border: 4px solid black;
+            box-sizing: border-box;
+            padding: .5rem;
+            position: relative;
+        }
+        
+        .quote img {
+            align-self: center;
+        }
+        
+        .author {
+            Font-Family: 'Slabo 13px', Serif;
+            font-size: 1.5rem;
+        }
+        
+        .quote::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            /*   border: 4px solid black; */
+            box-sizing: border-box;
+            top: -1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid black;
+        }
+        /* start of products page */
+        
+        #BeerShop {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        .beerItem {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--green);
+            color: #fff;
+            margin: 3rem auto;
+            align-items: center;
+            max-width: 540px;
+        }
+        
+        .beerText {
+            display: flex;
+            flex-direction: column;
+            line-height: 2rem;
+            padding: 2em 0;
+            max-width: 460px;
+        }
+        
+        .beerText .button {
+            align-self: center;
+        }
+        
+        .beerFacts,
+        .beerAbout {
+            font-family: 'Lato', Sans-Serif;
+            margin: 0 50px;
+        }
+        
+        .beerAbout {
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        .beerFacts,
+        .beerDescription,
+        .beerText .button {
+            order: 3;
+        }
+        
+        .beerTitle,
+        .beerAbout {
+            order: 1;
+        }
+        
+        .productImage {
+            order: 2;
+            margin: 1em 0;
+            max-width: 360px;
+            align-self: center;
+        }
+        
+        #productCards {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            Font-Family: 'Lato', Sans-Serif;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        
+        .card {
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            background-color: #112012;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 0.5rem;
+        }
+        
+        .card img {
+            width: 100%;
+        }
+        
+        .card h2 {
+            font-size: 20px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            Font-Family: 'Lato', Sans-Serif;
+        }
+        
+        .card h3 {
+            font-size: 14px;
+            margin: 10px;
+        }
+        
+        .card .button {
+            font-size: 14px;
+            border: none;
+            margin: 10px;
+        }
+        
+        .card .button:hover {
+            color: #d7c486;
+        }
+        
+        .arrowSvg {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .Shop svg {
+            align-self: center;
         }
         /* start of desktop styles */
         
@@ -423,6 +640,7 @@
                 background-image: url(../images/values_banner.png);
             }
             .values {
+                flex: 1;
                 margin: 0px auto;
             }
             #valuesGroup {
