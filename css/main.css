@@ -208,9 +208,12 @@
         
         #valuesGroup {
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
             align-items: center;
-            width: 305px;
+            width: 80%;
             margin: 0 auto;
         }
         
@@ -223,29 +226,28 @@
         }
         
         .values {
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            /* margin-top: 20px; */
+            height: 425px;
+            width: 100%;
+            max-width: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 1rem;
         }
         
         #value1 {
             background-image: url(../images/natural_beer-mobile.jpg);
-            height: 425px;
-            width: 305px;
-            background-repeat: no-repeat;
         }
         
         #value2 {
             background-image: url(../images/friends-mobile.jpg);
-            height: 425px;
-            width: 305px;
-            background-repeat: no-repeat;
         }
         
         #value3 {
             background-image: url(../images/pouring-mobile.jpg);
-            height: 425px;
-            width: 305px;
-            background-repeat: no-repeat;
-            margin-bottom: 20px;
         }
         
         #footer {
@@ -284,13 +286,17 @@
         #socials {
             display: flex;
             align-self: center;
+            flex-wrap: wrap;
         }
         
         .social {
-            height: 30px;
-            width: 30px;
-            padding: 20px;
+            padding: 5px 20px;
             cursor: pointer;
+        }
+        
+        .social img {
+            height: 15px;
+            width: 15px;
         }
         
         .headerSocials {
@@ -314,8 +320,11 @@
             text-align: center;
             color: #fff;
             padding-top: 6rem;
-            font-size: 1.5rem;
             /* flex: 1 1 160px; */
+        }
+        
+        #perspectiveTitle h2 {
+            padding: 20px;
         }
         
         #perspectiveTitle h3 {
@@ -350,7 +359,7 @@
         }
         
         .textArea p {
-            padding: 0;
+            padding: 0px;
             width: 80%;
             margin: 0 auto;
         }
@@ -363,7 +372,7 @@
         .quote {
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 90%;
             height: auto;
             align-self: center;
             padding-top: 100px;
@@ -372,10 +381,16 @@
             box-sizing: border-box;
             padding: .5rem;
             position: relative;
+            max-width: 650px;
         }
         
         .quote img {
             align-self: center;
+        }
+        
+        .quote p {
+            padding: 10px;
+            margin: 0;
         }
         
         .author {
@@ -511,6 +526,99 @@
         .Shop svg {
             align-self: center;
         }
+        /* start of ads styles */
+        
+        #adsWrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #ourAds {
+            margin: 2em 0;
+        }
+        /* start of purchase styles */
+        
+        #purchaseWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 2em 0;
+        }
+        
+        #finder {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        #contact {
+            align-self: center;
+            max-width: 400px;
+            background-color: #112012;
+            padding: 50px;
+            border-bottom-left-radius: 250px;
+            border-bottom-right-radius: 250px;
+            color: #fff;
+        }
+        
+        #contact .purchaseTitle {
+            text-align: center;
+        }
+        
+        #contact p {
+            Font-Family: 'Lato', Sans-Serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .input {
+            flex-direction: column;
+            display: flex;
+            margin: 20px 0;
+        }
+        
+        .send {
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        
+        .send:hover {
+            background-color: #bf2e27;
+            color: #fff;
+        }
+        
+        label {
+            font-size: 17px;
+            Font-Family: 'Slabo 13px', Serif;
+            text-transform: uppercase;
+        }
+        
+        input {
+            height: 60px;
+            width: auto;
+            Font-Family: 'Lato', Sans-Serif;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        
+        .send {
+            width: 40%;
+            height: 3rem;
+            align-self: center;
+        }
+        
+        textarea {
+            resize: none;
+            height: 175px;
+            padding: 20px;
+            box-sizing: border-box;
+            Font-Family: 'Lato', Sans-Serif;
+            /* font-size: 20px; */
+        }
         /* start of desktop styles */
         
         @media (min-width: 1024px) {
@@ -522,22 +630,26 @@
                 animation: 3s ease-in-out infinite btn-animation;
             }
             .headerSocials {
+                flex-direction: column;
                 display: flex;
             }
             .navList {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
+                max-width: 760px;
+                width: 100%;
+                margin-right: 1em;
             }
             .menuBtn {
                 display: none;
             }
             .navLink {
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 1.2rem;
                 font-family: 'Slabo 13px', Serif;
                 font-weight: bolder;
                 color: #fff;
-                padding: 0 40px;
+                /* padding: 0 2rem; */
             }
             #mainLogo {
                 top: 10px;
@@ -547,7 +659,7 @@
                 width: auto;
             }
             .navSpacer {
-                width: 320px;
+                width: 620px;
             }
             #mainNav {
                 height: 158px;
@@ -640,13 +752,14 @@
                 background-image: url(../images/values_banner.png);
             }
             .values {
-                flex: 1;
-                margin: 0px auto;
+                height: 305px;
+                margin: 2em auto;
             }
             #valuesGroup {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                display: flex;
+                flex-direction: row;
                 width: 100%;
+                height: auto;
                 margin: 20px auto;
             }
             #value1 {
@@ -663,7 +776,6 @@
                 max-width: 400px;
                 width: 100%;
                 background-image: url(../images/quality_beer.jpg);
-                margin-bottom: 0;
             }
             #footer {
                 display: flex;
