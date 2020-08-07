@@ -1,7 +1,8 @@
 (() => {
 
-    const offset = 376,
-        carousel = document.querySelector('.carousel'),
+
+    let offset = getCarouselItemOffset();
+    const carousel = document.querySelector('.carousel'),
         carouselItems = document.querySelectorAll('.card'),
         nextButton = document.querySelector('.arrowRight'),
         previousButton = document.querySelector('.arrowLeft'),
@@ -9,7 +10,18 @@
         highestOffset = -1504;
 
     let offsetTotal = -2 * offset;
+
+    if (window.innerWidth > 1800) {
+        offsetTotal = 0;
+    }
     // let offsetTotal = ;
+    function getCarouselItemOffset() {
+        const carouselItemStyles = window.getComputedStyle(
+            document.querySelector('.card')
+        );
+
+        return parseInt(carouselItemStyles.width) + 16
+    }
 
     function next() {
         if ((offsetTotal - offset) < highestOffset) {
@@ -41,6 +53,15 @@
 
     nextButton.addEventListener('click', next);
     previousButton.addEventListener('click', previous);
+    window.addEventListener('resize', (event) => {
+        offset = getCarouselItemOffset();
+        if (window.innerWidth > 1800) {
+            offsetTotal = 0;
+        } else {
+            offsetTotal = -2 * offset;
+        }
+        update();
+    })
     update();
 
 })();
