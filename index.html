@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balla | Home</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato%7CSlabo+13px" rel="stylesheet">
@@ -12,36 +13,45 @@
 <body>
     <div id="container">
         <header>
-            <div id="logo"> <img id="mainLogo" class="logo" src="./images/Logo.svg" alt="Balla Logo Mans Head">
-                <h1 class="hidden">Balla Beer | Home</h1>
-            </div>
             <nav id="mainNav">
-
+                <div id="logo">
+                    <img id="mainLogo" class="logo" src="./images/Logo.svg" alt="Balla Logo Mans Head">
+                    <h1 class="hidden">Balla Beer | Home</h1>
+                </div>
+                <div class="navSpacer"></div>
                 <h2 class="hidden">Main Navigation</h2>
+                <button class="menuBtn navbar-toggle" id="js-navbar-toggle"><img src="./images/menu.svg" alt="hamburger menu"></button>
                 <ul class="navList">
                     <li>
                         <a class="navLink selected" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="navLink" href=" about.html ">About</a>
+                        <a class="navLink" href="about.html ">About</a>
                     </li>
                     <li>
                         <a class="navLink" href="products.html">Products</a>
                     </li>
                     <li>
-                        <a class="navLink" href=" ads.html ">Advertisements</a>
+                        <a class="navLink" href="ads.html ">Advertisements</a>
                     </li>
                     <li>
                         <a class="navLink" href="purchase.html">Purchase</a>
                     </li>
                 </ul>
+                <div class="headerSocials">
+                    <a class="social" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram logo"></a>
+                    <a class="social" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter logo"></a>
+                    <a class="social" href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook logo"></a>
+                </div>
             </nav>
 
         </header>
         <section id=mainContent>
             <div id="heroImg">
-                <h2 class="headingText">Balla Beer For Men</h2>
-                <a href="products.html" class="Headerbutton btn">Checkout Our Beer</a>
+                <div class="heroTxtWrap">
+                    <h2 class="headingText"><span>Balla</span> Beer For Men</h2>
+                    <a href="products.html" class="Headerbutton btn">Checkout Our Beer</a>
+                </div>
                 <div class="arrowSvg">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160.59" height="61.76" viewBox="0 0 160.59 61.76">
                         <defs>
@@ -81,34 +91,41 @@
                     <p>Bálla for Men's beer products are a perfect blend of soothing essential oils and natural flavours that are guaranteed to leave your mouth feeling dry, comfortable, and tasting great. </p>
                     <a href="about.html" class="button">Learn More</a>
 
-
-
                 </section>
-                <img id="aboutUsRight" src="images/hops_banner.jpg" alt="image of natural ingredients">
+                <div class="imageContainer"></div>
+                <!-- <picture>
+                    <source srcset="./images/411-hopsBanner.jpg" media="(max-width: 411px)">
+                    <img src="./images/hops_banner.jpg" alt="hops banner">
+                </picture> -->
             </div>
             <div id="CTA">
                 <section id="Actionproducts" class="actionItem">
                     <div class="actionText">
                         <h2>Our Story</h2>
-                        <p>Bálla for Men's beer products are a perfect blend of soothing essential oils and natural flavours that are guaranteed to leave your mouth feeling dry, comfortable, and tasting great.</p>
-                    </div> <a href="about.html" class="button">Learn More</a>
+                        <p>Balla's beer has been raised in Nova Scotia since 2005. It's a province where the water informs every aspect of its character from dramatic scenery, to distinctive culture and of course, exceptional beer.</p>
+                        <a href="about.html" class="button">Learn More</a>
+                    </div>
 
                 </section>
                 <section id="actionCraft" class="actionItem">
                     <div class="actionText">
                         <h2>Crafting Beer</h2>
-                        <p>Bálla for Men's beer products are a perfect blend of soothing essential oils and natural flavours that are guaranteed to leave your mouth feeling dry, comfortable, and tasting great.</p>
-                    </div><a href="products.html" class="button">Learn More</a> </section>
+                        <p>Brewed without compromise since 2005, taste our heritage in this crisp golden ale with distinct drinkability. Subtle spice and herb notes from the hops and yeast come together over a light cereal grain foundation to provide a fresh
+                            easy drinking ale. </p>
+                        <a href="products.html" class="button">Learn More</a>
+                    </div>
+                </section>
                 <section id="actionAds" class="actionItem">
                     <div class="actionText">
                         <h2>Advertising</h2>
-                        <p>Bálla for Men's beer products are a perfect blend of soothing essential oils and natural flavours that are guaranteed to leave your mouth feeling dry, comfortable, and tasting great.</p>
-                    </div><a href="ads.html" class="button">Learn More</a> </section>
+                        <p>While we are beer for men, we strive to be inclusive and supportive of everyone. If you are looking for advertising for your small business or start up, we would love to chat! </p>
+                        <a href="ads.html" class="button">Learn More</a>
+                    </div>
+                </section>
             </div>
             <div id="valuesBanner">
                 <h2>The Values Of Balla</h2>
-                <p>Normcore hammock biodiesel, keffiyeh pabst mixtape air plant waistcoat forage iPhone actually. YOLO man bun single-origin coffee
-                </p>
+
             </div>
             <div id="valuesGroup">
                 <section id="value1" class="values">
@@ -132,6 +149,7 @@
 
 
         <footer id="footer">
+            <a class="backUp" href="index.html"><img src="./images/up.svg" alt="back to top"></a>
 
             <h2 class="hidden">Footer Navigation</h2>
             <ul class="navList">
@@ -152,6 +170,19 @@
                 </li>
             </ul>
             <div id="FooterLogo"><img id="footerLogo" class="logo" src="./images/Logo_Head.svg" alt="Balla Logo Mans Head"></div>
+            <div id="footerContact">
+                <h2>ballaformen@gmail.com</h2>
+                <h2>123-456-7890</h2>
+
+                <h2 class="break">Balla Brewery</h2>
+                <h2>123 Balla Street, Suit 12</h2>
+                <h2>London, ON, Canada</h2>
+            </div>
+            <div id="socials">
+                <a class="social" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram logo"></a>
+                <a class="social" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter logo"></a>
+                <a class="social" href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook logo"></a>
+            </div>
         </footer>
 
 

@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Balla | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balla | Ads</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato%7CSlabo+13px" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -12,81 +14,112 @@
 <body>
     <div id="container">
         <header>
-            <div>
-                <img id="mainLogo" class="logo" src="./images/Logo.svg" alt="Balla Logo Mans Head">
-                <h1 class="hidden">Balla Beer | Advertising</h1>
-            </div>
             <nav id="mainNav">
-
+                <div id="logo">
+                    <img id="mainLogo" class="logo" src="./images/Logo.svg" alt="Balla Logo Mans Head">
+                    <h1 class="hidden">Balla Beer | Ads</h1>
+                </div>
+                <div class="navSpacer"></div>
                 <h2 class="hidden">Main Navigation</h2>
+                <button class="menuBtn navbar-toggle" id="js-navbar-toggle">>><img src="./images/menu.svg" alt="hamburger menu"></button>
                 <ul class="navList">
                     <li>
-                        <a class="navLink" href=" index.html ">Home</a>
+                        <a class="navLink" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="navLink" href="about.html">About</a>
+                        <a class="navLink" href="about.html ">About</a>
                     </li>
                     <li>
-                        <a class="navLink" href=" products.html ">Products</a>
+                        <a class="navLink" href="products.html">Products</a>
                     </li>
                     <li>
-                        <a class="navLink selected" href="ads.html">Advertisements</a>
+                        <a class="navLink selected" href="ads.html ">Advertisements</a>
                     </li>
                     <li>
-                        <a class="navLink" href=" purchase.html ">Purchase</a>
+                        <a class="navLink" href="purchase.html">Purchase</a>
                     </li>
                 </ul>
+                <div class="headerSocials">
+                    <a class="social" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram logo"></a>
+                    <a class="social" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter logo"></a>
+                    <a class="social" href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook logo"></a>
+                </div>
             </nav>
 
         </header>
         <div id="adsWrapper">
             <section id="ourAds">
-                <h2>Balla Advertising.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h3>LOREM IPSUM DOLOR AMET CONSECTETUER</h3>
+                <h2>Our Advertising.</h2>
+                <p>
+                    Here at Balla, we want to reach out to as many people as we can to try out beer. That's why we have our own team of on-site graphic designers and advertisers to create fun and captivating advertisements. If you are looking for advertising for your small
+                    business or start up, we would love to chat! Just shoot us a message and we will set you up with one of our talented designers for a free quote.
+                </p>
+                <a href="purchase.html" class="Adsbutton">Contact Us Today ➤</a>
             </section>
             <section id="gallery">
                 <h2 class="hidden">Gallery</h2>
                 <img class="galleryItem" src="images/ad_1.jpg" alt="ads ">
+                <div class="galleryItem videoBox">
+                    <h2>Checkout Our Promo Video!</h2>
+                    <p>Infomercial for Balla Original Beer</p>
+                    <i class="fas fa-play-circle"></i>
+                </div>
                 <img class="galleryItem" src="images/ad_2.jpg" alt="ads ">
                 <img class="galleryItem" src="images/ad_3.jpg" alt="ads ">
                 <img class="galleryItem" src="images/ad_4.jpg" alt="ads ">
                 <img class="galleryItem" src="images/ad_5.jpg" alt="ads ">
-                <img class="galleryItem" src="images/ad_1.jpg" alt="ads ">
+
             </section>
 
         </div>
+        <section class="lightbox">
+            <h1 class="hidden">Lightbox</h1>
+            <span class="close-lb">x</span>
+            <div class="videoWrap">
+                <video class="video" src="./assets/wells_selena_infomercial.mp4" controls></video>
+            </div>
+        </section>
+
 
 
 
         <footer id="footer">
+            <a class="backUp" href="ads.html"><img src="./images/up.svg" alt="back to top"></a>
 
             <h2 class="hidden">Footer Navigation</h2>
             <ul class="navList">
                 <li>
-                    <a class="navLink" href="index.html">Home</a>
+                    <a class="navLink" href=" index.html ">Home</a>
                 </li>
-
                 <li>
                     <a class="navLink" href="about.html">About</a>
                 </li>
-
                 <li>
-                    <a class="navLink" href="products.html">Products</a>
+                    <a class="navLink" href=" products.html ">Products</a>
                 </li>
-
                 <li>
                     <a class="navLink selected" href="ads.html">Advertisements</a>
                 </li>
-
                 <li>
-                    <a class="navLink" href="purchase.html">Purchase</a>
+                    <a class="navLink" href=" purchase.html">Purchase</a>
                 </li>
             </ul>
-            <div><img id="footerLogo" class="logo" src="./images/Logo_Head.svg" alt="Balla Logo Mans Head "></div>
-        </footer>
+            <div id="FooterLogo"><img id="footerLogo" class="logo" src="./images/Logo_Head.svg" alt="Balla Logo Mans Head"></div>
+            <div id="footerContact">
+                <h2>ballaformen@gmail.com</h2>
+                <h2>123-456-7890</h2>
 
+                <h2 class="break">Balla Brewery</h2>
+                <h2>123 Balla Street, Suit 12</h2>
+                <h2>London, ON, Canada</h2>
+            </div>
+            <div id="socials">
+                <a class="social" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram logo"></a>
+                <a class="social" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter logo"></a>
+                <a class="social" href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook logo"></a>
+            </div>
+        </footer>
+        <script src="js/lightbox.js"></script>
         <script src="js/main.js "></script>
     </div>
 </body>
