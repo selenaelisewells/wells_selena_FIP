@@ -14,31 +14,42 @@
         }
         
         #container {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            font-size: 16px;
-        }
-        
-        header {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
+            display: flex;
+            flex-direction: column;
         }
         /* nav Styles */
         
         #mainNav {
-            flex: 1;
+            text-transform: uppercase;
             display: flex;
             justify-content: space-between;
             background-color: var(--green);
-            height: 82px;
-            padding: 0 20px;
+            padding: 20px;
             align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        #mainNav.selected .navList {
+            display: flex;
         }
         
         .navList {
             display: none;
+            flex: 1 0 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .navList li {
+            padding: 1rem;
+        }
+        
+        .navLink {
+            color: #fff;
+            font-size: 1.5rem;
+            Font-Family: 'Slabo 13px', Serif;
         }
         
         #mainLogo {
@@ -55,7 +66,7 @@
             color: #d7c486;
         }
         
-        .selected {
+        .navLink.selected {
             color: #d7c486;
         }
         /* start of hero Image Styles */
@@ -149,6 +160,8 @@
             flex-direction: column;
             box-sizing: border-box;
             padding: 15px 45px;
+            justify-content: space-between;
+            height: 100%;
         }
         
         .actionText p {
@@ -157,6 +170,11 @@
         
         .actionText .button {
             margin: 0 auto;
+        }
+        
+        .actionText .button:hover {
+            background-color: #fff;
+            color: var(--green);
         }
         
         .imageContainer {
@@ -256,7 +274,7 @@
             /* align-items: center; */
             background-color: var(--green);
             color: #fff;
-            font-size: .5em;
+            font-size: 1rem;
             font-weight: lighter;
             padding: 40px;
             line-height: 30px;
@@ -271,6 +289,7 @@
             align-items: left;
             text-align: left;
             width: 100%;
+            font-size: 1rem;
         }
         
         .break {
@@ -281,6 +300,12 @@
             cursor: pointer;
             color: #fff;
             align-self: center;
+            height: 40px;
+            width: ;
+        }
+        
+        .backUp:hover {
+            background-color: var(--red);
         }
         
         #socials {
@@ -312,14 +337,16 @@
         }
         
         #perspectiveTitle {
-            background-image: url(../images/perspective_Banner-mobile.png);
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
             height: 250px;
+            background-image: url(../images/perspective_Banner-mobile.png);
+            display: flex;
+            flex-direction: column;
             text-align: center;
             color: #fff;
-            padding-top: 6rem;
+            padding-top: 4rem;
             /* flex: 1 1 160px; */
         }
         
@@ -334,13 +361,29 @@
             margin: 20px;
         }
         
+        #whoWeAre img {
+            display: none;
+        }
+        
         #ourPerspective p {
             width: 80%;
             font-size: 1rem;
         }
         
+        #whoWeAre {
+            display: flex;
+            flex-direction: column;
+        }
+        
         #whoWeAre .textArea p {
             font-size: 1rem;
+            margin: 20px;
+        }
+        
+        #mainContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         
         .textArea h2 {
@@ -351,11 +394,14 @@
             color: #fff;
             text-transform: uppercase;
             margin-bottom: 20px;
+            font-size: 1.25rem;
         }
         
         #checkout {
             margin: 40px 20px;
             text-transform: uppercase;
+            font-size: .75rem;
+            color: var(--green);
         }
         
         .textArea p {
@@ -418,6 +464,34 @@
             display: flex;
             flex-direction: column;
             margin-top: 2rem;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .arrowWrap {
+            width: calc(100% - 1rem);
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+        }
+        
+        .arrow {
+            font-size: 3rem;
+            color: var(--red);
+            cursor: pointer;
+        }
+        
+        .carousel {
+            max-width: 99vw;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            position: relative;
         }
         
         .beerItem {
@@ -428,18 +502,31 @@
             margin: 3rem auto;
             align-items: center;
             max-width: 540px;
+            height: 100%;
         }
         
         .beerText {
             display: flex;
             flex-direction: column;
             line-height: 2rem;
-            padding: 2em 0;
+            height: 100%;
             max-width: 460px;
         }
         
-        .beerText .button {
+        .infoWrap {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2em;
+        }
+        
+        .beerItem .button:hover {
+            background-color: #d7c486;
+            color: #112012;
+        }
+        
+        .infoWrap .button {
             align-self: center;
+            margin: 1rem;
         }
         
         .beerFacts,
@@ -478,6 +565,7 @@
             Font-Family: 'Lato', Sans-Serif;
             justify-content: space-between;
             box-sizing: border-box;
+            overflow: hidden;
         }
         
         .card {
@@ -489,9 +577,15 @@
             text-align: center;
             box-sizing: border-box;
             margin: 0.5rem;
+            flex: 1 0 auto;
+            transition: all 300ms;
         }
         
-        .card img {
+        .card:first-child {
+            margin-left: 15%;
+        }
+        
+        .card .card img {
             width: 100%;
         }
         
@@ -510,7 +604,7 @@
         .card .button {
             font-size: 14px;
             border: none;
-            margin: 10px;
+            margin: 1rem;
         }
         
         .card .button:hover {
@@ -526,15 +620,9 @@
         .Shop svg {
             align-self: center;
         }
-        /* start of ads styles */
         
-        #adsWrapper {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #ourAds {
-            margin: 2em 0;
+        .deskImg {
+            display: none;
         }
         /* start of purchase styles */
         
@@ -584,6 +672,10 @@
         .send {
             padding: 10px;
             text-transform: uppercase;
+            background-color: var(--green);
+            color: #fff;
+            border: solid 2px white;
+            border-radius: 6px;
         }
         
         .send:hover {
@@ -619,6 +711,133 @@
             Font-Family: 'Lato', Sans-Serif;
             /* font-size: 20px; */
         }
+        /* ads start */
+        /* start of ads styles */
+        
+        #ourAds {
+            margin: 2em 0;
+        }
+        
+        .videoBox {
+            order: -1;
+            border: 4px solid var(--red);
+            height: 320px;
+            max-width: 323px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .lightbox {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 500;
+            display: none;
+            margin: 0 auto;
+        }
+        
+        .videoWrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+        
+        video {
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 80%;
+        }
+        
+        .close-lb {
+            float: right;
+            padding-right: 40px;
+            cursor: pointer;
+            font-size: 3em;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.6;
+        }
+        
+        .close-lb:hover {
+            opacity: 1;
+        }
+        
+        .show-lightbox {
+            display: block;
+        }
+        
+        .videoBox .fas:hover {
+            color: #d7c486;
+        }
+        
+        .videoBox p {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .videoBox i {
+            align-self: center;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+        
+        .video {
+            width: 80%;
+        }
+        
+        .videoBox {
+            order: 0;
+        }
+        
+        #adsWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0 auto;
+            padding: 3em;
+        }
+        
+        #gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .galleryItem {
+            margin: 1em;
+        }
+        
+        #ourAds {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: left;
+            max-width: 500px;
+        }
+        
+        #ourAds h2 {
+            padding: 3rem;
+            text-align: left;
+            font-size: 3rem;
+        }
+        
+        .Adsbutton {
+            text-transform: uppercase;
+            font-size: 20px;
+            Font-Family: 'Lato', Sans-Serif;
+            margin-bottom: 20px;
+            color: var(--red);
+            align-self: left;
+            padding: 3rem;
+        }
         /* start of desktop styles */
         
         @media (min-width: 1024px) {
@@ -635,6 +854,7 @@
             }
             .navList {
                 display: flex;
+                flex-direction: row;
                 justify-content: space-between;
                 max-width: 760px;
                 width: 100%;
@@ -647,7 +867,6 @@
                 text-decoration: none;
                 font-size: 1.2rem;
                 font-family: 'Slabo 13px', Serif;
-                font-weight: bolder;
                 color: #fff;
                 /* padding: 0 2rem; */
             }
@@ -664,7 +883,10 @@
             #mainNav {
                 height: 158px;
                 display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
                 justify-content: flex-end;
+                border-radius: 0;
             }
             #heroImg {
                 max-width: 1640px;
@@ -708,14 +930,13 @@
                 background-color: #fff;
             }
             #aboutUs {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-                grid-template-rows: auto;
+                display: flex;
+                flex-direction: row;
                 max-height: 325px;
                 width: 100%;
                 margin: 0 auto;
                 margin-top: 14px;
-                grid-gap: 20px;
+                justify-content: space-between;
             }
             #aboutUsBox {
                 text-align: left;
@@ -796,6 +1017,120 @@
             }
             #footerLogo {
                 height: 182px;
+            }
+            #ourPerspective {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0 auto;
+                color: #fff;
+                background-image: url(../images/perspective_Banner.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 300px;
+            }
+            .persWrap {
+                width: 50%;
+                margin: 0 auto;
+                text-align: left;
+            }
+            #perspectiveTitle {
+                background-image: none;
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                height: 40%;
+            }
+            #perspectiveTitle h2 {
+                font-size: 3rem;
+                text-align: left;
+                padding: 0 20px;
+                margin-top: 2.2rem;
+            }
+            #ourPerspective p {
+                padding: 20px;
+                width: 100%;
+            }
+            #whoWeAre img {
+                display: flex;
+                height: 360px;
+                width: 100%;
+                max-width: 360px;
+            }
+            #whoWeAre {
+                display: flex;
+                flex-direction: row;
+                padding: 4rem 2rem 0 2rem;
+                justify-content: space-between;
+                max-width: 1200px;
+                align-items: center;
+            }
+            .whoWeAreWrap {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                margin: 0 auto;
+            }
+            /* start of products page */
+            #beerMenu {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                align-items: center;
+            }
+            .beerItem {
+                box-sizing: border-box;
+                width: 100%;
+                max-width: 1000px;
+                height: 360px;
+                margin: 20px;
+                display: flex;
+                background-color: #112012;
+                color: #fff;
+            }
+            .infoWrap {
+                display: flex;
+                flex-direction: column;
+            }
+            .beerText {
+                width: 100%;
+                max-width: 1000px;
+                box-sizing: border-box;
+                Font-Family: 'Lato', Sans-Serif;
+                display: flex;
+                flex-direction: row;
+            }
+            .productImage {
+                order: -1;
+                height: 360;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .mobileImg {
+                display: none;
+            }
+            .deskImg {
+                display: flex;
+            }
+            #adsWrapper {
+                flex-direction: row;
+            }
+            #BeerShop h2 {
+                font-size: 3rem;
+                padding: 10px;
+            }
+            .purchaseTitle {
+                font-size: 3rem;
+            }
+            /* purchase page */
+            #purchaseWrapper {
+                display: flex;
+                flex-direction: row;
+            }
+            #contact {
+                margin: -2rem 6rem 2rem 2rem;
             }
         }
         
