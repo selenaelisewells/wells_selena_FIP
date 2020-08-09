@@ -13,5 +13,14 @@ HTML CSS JS
 MIT
 
 ### Ressources Used:
-https://css-tricks.com/css-animation-libraries/
+Css Animation Resources: https://css-tricks.com/css-animation-libraries/
 https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+Google Maps API:https://developers.google.com/maps/documentation/embed/get-started
+Image Carousel:
+https://medium.com/@magyarn/simple-carousel-with-vanilla-js-3dd10a143ff2
+https://codepen.io/NickLediet/pen/yLOyJVK?editors=0110&fbclid=IwAR2hwxFrFgD-TJC6z7t2jvwRZdGSGMMWMO4az7fQnWGS_i_3LtEGc98fVNU
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment
+Video Lightboxes:
+https://developer.mozilla.org/en-US/docs/Web/API/Window/open
+Special Css Border Arrows :
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
