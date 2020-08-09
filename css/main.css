@@ -757,6 +757,58 @@
             display: block;
         }
         
+        .show-imagebox {
+            display: flex !important;
+        }
+        
+        .imageBox {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: var(--red) 4px solid;
+            width: 90%;
+            height: auto;
+            /* display: flex; */
+            padding: .5rem;
+            box-sizing: border-box;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .ad-info {
+            Font-Family: 'Lato', Sans-Serif;
+            font-size: 1rem;
+            line-height: 2rem;
+            margin: auto 0;
+        }
+        
+        .adImageWrap {
+            width: 80%;
+            margin: .5rem;
+            height: auto;
+        }
+        
+        .imageBoxWrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        
+        .ad-image {
+            width: 100%;
+            height: auto;
+        }
+        
+        .close-ib {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            align-self: flex-end;
+            margin-right: .5rem;
+        }
+        
         .videoBox .fas:hover {
             color: #d7c486;
         }
@@ -790,6 +842,7 @@
         
         .galleryItem {
             margin: 1em;
+            cursor: pointer;
         }
         
         #ourAds {
@@ -1115,6 +1168,13 @@
             }
             .arrowWrap {
                 display: none;
+            }
+            .adImageWrap {
+                width: 50%;
+                height: auto;
+            }
+            .imageBox {
+                width: 70%;
             }
         }
         
